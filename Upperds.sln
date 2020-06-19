@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{09C582C0-FA60-45DA-A5CA-854BF767780C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "src\Api\Api.csproj", "{3C594C54-A4DB-49A3-82F0-555560589403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Debug|x64.Build.0 = Debug|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Debug|x86.Build.0 = Debug|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Release|x64.ActiveCfg = Release|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Release|x64.Build.0 = Release|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Release|x86.ActiveCfg = Release|Any CPU
+		{3C594C54-A4DB-49A3-82F0-555560589403}.Release|x86.Build.0 = Release|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Debug|x64.Build.0 = Debug|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Debug|x86.Build.0 = Debug|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Release|x64.ActiveCfg = Release|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Release|x64.Build.0 = Release|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Release|x86.ActiveCfg = Release|Any CPU
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB}.Release|x86.Build.0 = Release|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Debug|x64.Build.0 = Debug|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Debug|x86.Build.0 = Debug|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Release|x64.ActiveCfg = Release|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Release|x64.Build.0 = Release|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Release|x86.ActiveCfg = Release|Any CPU
+		{E6E8DEAA-FFD7-4746-B978-CD55EB2DD639}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C594C54-A4DB-49A3-82F0-555560589403} = {09C582C0-FA60-45DA-A5CA-854BF767780C}
+		{3CCE6035-B7C8-4CFB-B46C-ACDE8E2F43FB} = {09C582C0-FA60-45DA-A5CA-854BF767780C}
+	EndGlobalSection
+EndGlobal

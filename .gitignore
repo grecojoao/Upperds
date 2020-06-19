@@ -1,0 +1,7 @@
+src/Api/bin
+src/Api/obj
+src/Domain/bin
+src/Domain/obj
+test/bin
+test/obj
+.vscode
