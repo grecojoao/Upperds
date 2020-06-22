@@ -124,7 +124,7 @@ namespace Api.Controllers
                 return BadRequest(new Error("Erro ao remover do Banco de Dados", "Não foi possível Remover a Colheita!"));
             }
 
-            return Ok("Colheita removida com sucesso!");
+            return Ok();
         }
 
         private async Task<bool> TreeIsValid(HarvestTree model, DataContext context)

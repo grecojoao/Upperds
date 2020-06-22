@@ -105,7 +105,7 @@ namespace Api.Controllers
                 return BadRequest(new Error("Erro ao remover do Banco de Dados", "Não foi possível Remover a Espécie!"));
             }
 
-            return Ok("Espécie removida com sucesso!");
+            return Ok();
         }
     }
 }

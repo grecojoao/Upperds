@@ -111,7 +111,7 @@ namespace Api.Controllers
                 return BadRequest(new Error("Erro ao atualizar o Banco de Dados", "Não foi possível Atualizar a Árvore!"));
             }
 
-            return Ok(model);
+            return Ok();
         }
 
         [HttpDelete]
@@ -136,7 +136,7 @@ namespace Api.Controllers
                 return BadRequest(new Error("Erro ao remover do Banco de Dados", "Não foi possível Remover a Árvore!"));
             }
 
-            return Ok("Árvore removida com sucesso!");
+            return Ok();
         }
 
         private async Task<bool> SpeciesIsValid(Tree model, DataContext context)

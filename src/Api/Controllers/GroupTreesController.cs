@@ -106,7 +106,7 @@ namespace Api.Controllers
                 return BadRequest(new Error("Erro ao remover do Banco de Dados", "Não foi possível Remover o Grupo de Árvores!"));
             }
 
-            return Ok("Grupo de Árvores removido com sucesso!");
+            return Ok();
         }
     }
 }
