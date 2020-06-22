@@ -5,3 +5,7 @@ src/Domain/obj
 test/bin
 test/obj
 .vscode
+
+.idea/
+
+src/Domain/Migrations/
