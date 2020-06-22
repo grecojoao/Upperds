@@ -14,7 +14,7 @@ namespace Api.Controllers
 {
     [ApiController]
     [Route("v1/HarvestTree")]
-    [Authorize(Roles = "employee")]
+    [Authorize(Roles = "employee, manager")]
     public class HarvestTreeController : ControllerBase
     {
         [HttpGet]

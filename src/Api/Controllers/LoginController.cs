@@ -17,7 +17,7 @@ namespace Api.Controllers
         [HttpPost]
         [Route("")]
         [AllowAnonymous]
-        public async Task<ActionResult<ResponseLoginDto>> Authenticate([FromBody] User model, [FromServices] DataContext context)
+        public async Task<ActionResult<ResponseLogin>> Authenticate([FromBody] User model, [FromServices] DataContext context)
         {
             var user = await context.Users.Where(x => x.UserName.ToLower() == model.UserName.ToLower() && x.Password.ToLower() == model.Password.ToLower()).FirstOrDefaultAsync();
 
@@ -27,7 +27,7 @@ namespace Api.Controllers
             var token = TokenService.GenerateToken(user);
             user.Password = "";
 
-            return Ok(new ResponseLoginDto(user.UserName, token));
+            return Ok(new ResponseLogin(user.UserName, token));
         }
 
         [HttpPost]
