@@ -40,6 +40,27 @@ namespace Api.Controllers
             return Ok(harvestGroupTrees);
         }
 
+        [HttpGet]
+        [Route("Filter")]
+        public async Task<ActionResult<IQueryable<HarvestGroupTrees>>> GetFilter([FromBody] FilterHarvestGroupTrees model,
+        [FromServices] DataContext context)
+        {
+            var harvestGroupTrees = await context.HarvestGroupTrees.Include(x => x.Group).AsNoTracking().ToListAsync();
+            if (!harvestGroupTrees.Any())
+                harvestGroupTrees = await context.HarvestGroupTrees.AsNoTracking().ToListAsync();
+
+            if (model.GroupTreesId != 0)
+                harvestGroupTrees = harvestGroupTrees.Where(x => x.GroupId == model.GroupTreesId).ToList();
+
+            if (model.InitialDate != default)
+                harvestGroupTrees = harvestGroupTrees.Where(x => x.Date >= model.InitialDate).ToList();
+
+            if (model.FinalDate != default)
+                harvestGroupTrees = harvestGroupTrees.Where(x => x.Date <= model.FinalDate).ToList();
+
+            return Ok(harvestGroupTrees);
+        }
+
         [HttpPost]
         [Route("")]
         public async Task<ActionResult<IId>> Post(

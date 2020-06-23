@@ -15,6 +15,10 @@ namespace test.Service
         [Headers("Authorization: Bearer")]
         Task<ApiResponse<HarvestTreeResponse[]>> GetAllAsync();
 
+        [Get("/v1/HarvestTree/Filter")]
+        [Headers("Authorization: Bearer")]
+        Task<ApiResponse<HarvestTreeResponse[]>> GetFilterAsync([Body] FilterHarvestTree filterQuery);
+
         [Post("/v1/HarvestTree")]
         [Headers("Authorization: Bearer")]
         Task<ApiResponse<int>> PostAsync([Body] HarvestTree species);
