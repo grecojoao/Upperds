@@ -48,7 +48,6 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao gravar no Banco de Dados", "Não foi possível criar o Grupo de Árvores!"));
             }
-
             return Ok(model.Id);
         }
 
@@ -79,7 +78,6 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao atualizar o Banco de Dados", "Não foi possível Atualizar o Grupo de Árvores!"));
             }
-
             return Ok();
         }
 
@@ -90,7 +88,6 @@ namespace Api.Controllers
         [FromServices] DataContext context,
         [FromServices] IUnitOfWork UnitOfWork)
         {
-
             var groupOfTrees = await context.GroupTrees.FirstOrDefaultAsync(x => x.Id == id);
             if (groupOfTrees == null)
                 return NotFound(new Error("Id inválido", "Grupo de Árvores não encontrada!"));
@@ -105,7 +102,6 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao remover do Banco de Dados", "Não foi possível Remover o Grupo de Árvores!"));
             }
-
             return Ok();
         }
     }

@@ -48,7 +48,6 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao gravar no Banco de Dados", "Não foi possível criar a Espécie!"));
             }
-
             return Ok(model.Id);
         }
 
@@ -79,7 +78,6 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao atualizar o Banco de Dados", "Não foi possível Atualizar a Espécie!"));
             }
-
             return Ok();
         }
 
@@ -104,7 +102,6 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao remover do Banco de Dados", "Não foi possível Remover a Espécie!"));
             }
-
             return Ok();
         }
     }

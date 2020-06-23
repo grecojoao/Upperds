@@ -26,7 +26,6 @@ namespace Api.Controllers
 
             var token = TokenService.GenerateToken(user);
             user.Password = "";
-
             return Ok(new ResponseLogin(user.UserName, token));
         }
 
@@ -40,7 +39,6 @@ namespace Api.Controllers
 
             await Context.Users.AddAsync(model);
             await UnitOfWork.Commit();
-
             return Ok(model.Id);
         }
     }

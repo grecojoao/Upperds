@@ -37,7 +37,6 @@ namespace Api.Controllers
             var harvestTree = await context.HarvestTree.Include(x => x.Tree).AsNoTracking().ToListAsync();
             if (!harvestTree.Any())
                 harvestTree = await context.HarvestTree.AsNoTracking().ToListAsync();
-
             return Ok(harvestTree);
         }
 
@@ -63,7 +62,6 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao gravar no Banco de Dados", "Não foi possível criar a Colheita!"));
             }
-
             return Ok(model.Id);
         }
 
@@ -97,7 +95,6 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao atualizar o Banco de Dados", "Não foi possível Atualizar a Colheita!"));
             }
-
             return Ok();
         }
 
@@ -108,7 +105,6 @@ namespace Api.Controllers
         [FromServices] DataContext context,
         [FromServices] IUnitOfWork UnitOfWork)
         {
-
             var harvestTrees = await context.HarvestTree.FirstOrDefaultAsync(x => x.Id == id);
             if (harvestTrees == null)
                 return NotFound(new Error("Id inválido", "Colheita não encontrada!"));
@@ -123,7 +119,6 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao remover do Banco de Dados", "Não foi possível Remover a Colheita!"));
             }
-
             return Ok();
         }
 

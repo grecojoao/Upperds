@@ -7,6 +7,7 @@ namespace Domain.Models.Login
     {
         [Key]
         public int Id { get; set; }
+        
         [Required(ErrorMessage = "Este campo é obrigatório.")]
         [MaxLength(20, ErrorMessage = "Este campo deve conter no máximo 20 caracteres.")]
         [MinLength(3, ErrorMessage = "Este campo deve conter no mínimo 3 caracteres.")]

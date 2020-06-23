@@ -9,3 +9,5 @@ test/obj
 .idea/
 
 src/Domain/Migrations/
+
+.vs/

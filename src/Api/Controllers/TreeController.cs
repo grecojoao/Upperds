@@ -48,7 +48,6 @@ namespace Api.Controllers
 
         [HttpPost]
         [Route("")]
-
         public async Task<ActionResult<IId>> Post(
         [FromBody] Tree model,
         [FromServices] DataContext context,
@@ -72,13 +71,11 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao gravar no Banco de Dados", "Não foi possível criar a Árvore!"));
             }
-
             return Ok(model.Id);
         }
 
         [HttpPut]
         [Route("{id:int}")]
-
         public async Task<ActionResult> Put(
         int id,
         [FromBody] Tree model,
@@ -110,13 +107,11 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao atualizar o Banco de Dados", "Não foi possível Atualizar a Árvore!"));
             }
-
             return Ok();
         }
 
         [HttpDelete]
         [Route("{id:int}")]
-
         public async Task<ActionResult> Delete(
         int id,
         [FromServices] DataContext context,
@@ -135,7 +130,6 @@ namespace Api.Controllers
             {
                 return BadRequest(new Error("Erro ao remover do Banco de Dados", "Não foi possível Remover a Árvore!"));
             }
-
             return Ok();
         }
 
