@@ -16,6 +16,8 @@ Para cadastrar uma árvore é necessário antes cadastrar **espécie *e* grupo**
 
 São permitidas também exclusões de colheitas e grupos sem afetar árvores, mas ao deletar uma *espécie* você também estará excluindo as **árvores** pertencentes a ela.
 
+Você também pode realizar consultas com **filtros personalizados** nas **Colheitas**: Árvore, Espécie, Grupo e Período.
+
 ---
 
 No desenvolvimento foram utilizados containers docker para o SQL Server em máquinas Linux.
